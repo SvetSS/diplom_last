@@ -8,16 +8,13 @@ const scrollArrow = () => {
         const servicesSection = document.getElementById('services');
         const servicesSectionPosition = servicesSection.offsetTop;
         if (scrollPosition > servicesSectionPosition) {
-
             upArrow.style.display = 'block';
         } else {
-
             upArrow.style.display = 'none';
         }
     });
 
     upArrow.addEventListener('click', () => {
-
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
