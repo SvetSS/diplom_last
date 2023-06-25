@@ -72,7 +72,7 @@ const sendForm = () => {
 
             const formElements = form.querySelectorAll('input[type="text"] ');
 
-            isError = false;
+            let isError = false;
 
             if (/^[А-Яа-яЁё\s-]+$/gi.test(formName.value) && formName.value !== '') {
                 formName.classList.add('success');
