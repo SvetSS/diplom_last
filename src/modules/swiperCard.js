@@ -1,26 +1,23 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 
 const swiperCard = () => {
-    const swiper = new Swiper('.services-elements .swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
+    const swiper = new Swiper('.services-elements ', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+        },
+        freeMode: true,
         pagination: {
-            el: '.swiper-pagination',
+            el: ".swiper-pagination ",
+            clickable: true,
         },
-
-        // Navigation arrows
+        loop: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ' .arrow-right',
+            prevEl: '.arrow-left ',
         },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
     });
     console.log('nnn')
 };

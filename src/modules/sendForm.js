@@ -90,6 +90,7 @@ const sendForm = () => {
             //
             if (validate(formElements)) {
                 submitForm(form);
+
             } else {
                 alert('Ошибка ввода');
             }
