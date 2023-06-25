@@ -1,6 +1,6 @@
 const modal = () => {
 
-    const modal = document.querySelector('.modal-callback')//');
+    const modal = document.querySelector('.modal-callback'); //');
     const modalOverlay = document.querySelector('.modal-overlay');
     const buttonServices = document.querySelector('.button-services');
     const buttons = document.querySelectorAll('.callback-btn');
@@ -10,11 +10,11 @@ const modal = () => {
     const closeModal = () => {
         modal.style.display = 'none';
         modalOverlay.style.display = 'none';
-    }
+    };
     const openModal = () => {
         modal.style.display = 'block';
         modalOverlay.style.display = 'block';
-    }
+    };
 
     buttons.forEach(btn => {
         btn.addEventListener('click', openModal);
@@ -33,4 +33,4 @@ const modal = () => {
 
 }
 
-module.exports = modal;
+export default modal;

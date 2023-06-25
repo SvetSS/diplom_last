@@ -25,7 +25,6 @@ const accordeon = () => {
 
 
     //startSlide();
+}
 
-};
-
-module.exports = accordeon;
+export default accordeon;

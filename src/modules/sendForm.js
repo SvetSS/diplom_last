@@ -28,7 +28,7 @@ const sendForm = () => {
             headers: {
                 'Content-Type': 'application/json'
             }
-        }).then(response => response.json())
+        }).then(response => response.json());
     };
     const submitForm = form => {
         let formElements = form.querySelectorAll('input[type="text"]');
@@ -88,7 +88,6 @@ const sendForm = () => {
                 alert('в поле номер телефона вводите только цифры, дефис');
             }
             //
-
             if (validate(formElements)) {
                 submitForm(form);
             } else {
@@ -100,4 +99,4 @@ const sendForm = () => {
     };
 
 }
-module.exports = sendForm;
+export default sendForm;

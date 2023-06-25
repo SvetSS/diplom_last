@@ -89,6 +89,6 @@ const slider = () => {
 
     startSlide();
 
-};
+}
 
-module.exports = slider;
+export default slider;
