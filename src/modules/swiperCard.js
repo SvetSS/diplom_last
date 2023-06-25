@@ -2,7 +2,17 @@ import Swiper from 'swiper/bundle';
 
 const swiperCard = () => {
     const swiper = new Swiper('.services-elements ', {
-        slidesPerView: 3,
+        slidesPerView: 1,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
         spaceBetween: 30,
         autoplay: {
             delay: 2000,
