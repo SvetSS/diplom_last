@@ -5,11 +5,13 @@ import accordeon from './modules/accordeon';
 import swiperCard from './modules/swiperCard';
 import scrollArrow from './modules/scrollArrow';
 import abouttCompany from './modules/abouttCompany';
+import mobileMenu from './modules/mobileMenu';
 
 modal();
 slider();
 sendForm();
 accordeon();
 swiperCard();
+mobileMenu();
 scrollArrow();
 abouttCompany();

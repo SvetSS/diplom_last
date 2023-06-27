@@ -514,11 +514,13 @@ a.absolute {
 }
 
 .mobile-menu.open+.overlay {
-	z-index: 400;
+	z-index: 1;
 	opacity: 1;
 }
 
 .mobile-menu>ul>li>a {
+	position: relative !important;
+	z-index: 5000;
 	display: block;
 	text-decoration: none;
 	color: #fff;

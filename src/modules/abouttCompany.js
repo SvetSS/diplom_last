@@ -7,8 +7,6 @@ const abouttCompany = () => {
     console.log(elementsValue);
     let currentCount = 0;
 
-    //elementsValue[0].textContent = currentCount;
-    //elementsValue[0].classList.remove('visible-xs');
     elements.forEach(el => {
         el.style.display = 'none';
     });
@@ -43,7 +41,6 @@ const abouttCompany = () => {
         const countInInterval = setInterval(() => {
             currentCount += 1;
             elementsValue[i].textContent = currentCount;
-            //console.log(elementsValue[0].textContent);
 
             if (elementsValue[i].textContent >= stopCount) {
                 clearInterval(countInInterval);
@@ -51,18 +48,6 @@ const abouttCompany = () => {
             }
         }, 15);
     };
-    /*  const countOfOrder = () => {
-         currentCount = 1;
-         const countInInterval = setInterval(() => {
-             currentCount += 1;
-             elementsValue[0].textContent = currentCount;
-             console.log(elementsValue[0].textContent);
- 
-             if (elementsValue[0].textContent >= 75) {
-                 clearInterval(countInInterval);
-             }
-         }, 15);
-     }; */
 
     window.onload = () => {
         an;
@@ -71,11 +56,6 @@ const abouttCompany = () => {
         countOfOrder(2, 60, '60 минут');
         countOfOrder(3, 101, 101);
     };
-
-
-
-    console.log(elements);
-    console.log(numSection);
 
 }
 
