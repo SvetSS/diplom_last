@@ -8,19 +8,20 @@ const mobileMenu = () => {
     console.log(mobMenuBtn);
     console.log(closeBtn);
 
-
-
-
     const handleMenu = () => {
         mobileMenuSec.classList.toggle('open');
+
     };
-    mobileMenuSec.addEventListener('click ', e => {
+
+    mobileMenuSec.addEventListener('click', e => {
         console.log(e.target);
         if (e.target === closeBtn || e.target.matches('.mobile-menu>ul>li>a')) {
 
             mobileMenuSec.classList.toggle('open');
+
         }
     });
+    //mobMenuBtn.addEventListener('click', e => { console.log(e.target); handleMenu() });
     mobMenuBtn.addEventListener('click', handleMenu);
 
 }
