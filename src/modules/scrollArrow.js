@@ -7,10 +7,10 @@ const scrollArrow = () => {
 
         const servicesSection = document.getElementById('services');
         const servicesSectionPosition = servicesSection.offsetTop;
-        if (scrollPosition > servicesSectionPosition) {
-            upArrow.style.display = 'block';
-        } else {
+        if (scrollPosition < servicesSectionPosition) {
             upArrow.style.display = 'none';
+        } else {
+            upArrow.style.display = 'block';
         }
     });
 
