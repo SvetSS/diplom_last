@@ -4,7 +4,6 @@ const abouttCompany = () => {
     const elements = numSection.querySelectorAll('.col-sm-3');
     const elementsValue = numSection.querySelectorAll('.push30');
 
-    console.log(elementsValue);
     let currentCount = 0;
 
     elements.forEach(el => {
