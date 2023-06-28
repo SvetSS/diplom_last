@@ -6,6 +6,8 @@ import swiperCard from './modules/swiperCard';
 import scrollArrow from './modules/scrollArrow';
 import abouttCompany from './modules/abouttCompany';
 import mobileMenu from './modules/mobileMenu';
+import stepsWork from './modules/stepsWork';
+import advantages from './modules/advantages';
 
 modal();
 slider();
@@ -15,3 +17,5 @@ swiperCard();
 mobileMenu();
 scrollArrow();
 abouttCompany();
+stepsWork();
+advantages();

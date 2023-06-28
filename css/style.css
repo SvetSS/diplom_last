@@ -158,6 +158,9 @@ h4 {
 }
 
 @media only screen and (max-width: 767px) {
+	.arrow-left.for-mobile {
+		display: block;
+	}
 
 	h1,
 	.title-h1 {
@@ -511,6 +514,10 @@ a.absolute {
 	-moz-transition: opacity 200ms ease-out;
 	-o-transition: opacity 200ms ease-out;
 	transition: opacity 200ms ease-out;
+}
+
+.for-mobile {
+	display: none;
 }
 
 .mobile-menu.open+.overlay {
