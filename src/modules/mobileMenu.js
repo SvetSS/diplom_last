@@ -15,13 +15,12 @@ const mobileMenu = () => {
 
     mobileMenuSec.addEventListener('click', e => {
         console.log(e.target);
-        if (e.target === closeBtn || e.target.matches('.mobile-menu>ul>li>a')) {
+        if (e.target === closeBtn || e.target.matches('.mobile-menu>ul>li>a') || e.target.matches('.mobile-menu>a.callback-btn')) {
 
             mobileMenuSec.classList.toggle('open');
 
         }
     });
-    //mobMenuBtn.addEventListener('click', e => { console.log(e.target); handleMenu() });
     mobMenuBtn.addEventListener('click', handleMenu);
 
 }
